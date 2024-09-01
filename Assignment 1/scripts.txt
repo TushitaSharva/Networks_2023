@@ -1,0 +1,12 @@
+traceroute -I -A <domain>
+{ Example: > traceroute -I -A google.com, 
+                           traceroute -I -A www.isro.gov.in
+}
+
+whois <IP_Address>
+
+whois <IP_Address> | grep 'inetnum' | grep 'NetRange'
+whois <IP_Address> | grep 'OriginAS' 
+whois <IP_Address> | grep 'Organization'
+
+Looking Glass: https://www.cogentco.com/en/looking-glass (IPv4 Trace Test)
